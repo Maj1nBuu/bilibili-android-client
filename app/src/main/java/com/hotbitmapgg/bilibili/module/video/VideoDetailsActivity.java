@@ -55,45 +55,31 @@ public class VideoDetailsActivity extends RxBaseActivity {
 
   @BindView(R.id.toolbar)
   Toolbar mToolbar;
-
   @BindView(R.id.collapsing_toolbar)
   CollapsingToolbarLayout mCollapsingToolbarLayout;
-
   @BindView(R.id.video_preview)
   ImageView mVideoPreview;
-
   @BindView(R.id.tab_layout)
   SlidingTabLayout mSlidingTabLayout;
-
   @BindView(R.id.view_pager)
   ViewPager mViewPager;
-
   @BindView(R.id.fab)
   FloatingActionButton mFAB;
-
   @BindView(R.id.app_bar_layout)
   AppBarLayout mAppBarLayout;
-
   @BindView(R.id.tv_player)
   TextView mTvPlayer;
-
   @BindView(R.id.tv_av)
   TextView mAvText;
 
   private List<Fragment> fragments = new ArrayList<>();
-
   private List<String> titles = new ArrayList<>();
-
   private int av;
-
   private String imgUrl;
-
   private VideoDetailsInfo.DataBean mVideoDetailsInfo;
-
 
   @Override
   public int getLayoutId() {
-
     return R.layout.activity_video_details;
   }
 
